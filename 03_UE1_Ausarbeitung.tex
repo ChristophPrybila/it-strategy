@@ -1,0 +1,141 @@
+\documentclass[a4paper, 11pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{german}
+\usepackage{ngerman}
+\usepackage{url}
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\ \vspace{10pt}\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{VU IT-Strategie Übung 1}\\ % Title
+WS 2013\\\vspace{5pt}
+Gruppe 03} % Subtitle
+
+ 
+
+ 
+
+ 
+\author{Hafellner Markus (1125415)\\
+ Lin Zhong Li (0828454)\\
+ Prybila Christoph (0925463)\\
+ Stütz Anton (1129424)\\
+ \vspace{10pt}
+ \textbf{Gewählte Branche:} Banken
+\\{\textit{Innovationsfelder: mobile banking, big data, contactless payment}}} % Institution
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section{Kontextbezogene Recherchen}
+\subsection{IT-Strategie im digitalen Zeitalter allgemein}
+\label{subsec:StrategieAllgemein}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{IT-Strategie im Kontext der ``Digitalen Transformation'' moderner Unternehmen}
+\input{sections/ITStrategieAllg}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Auswirkungen von Smart Technologies, Social Apps etc. auf unternehmensinterne Prozesse}
+\input{sections/Auswirkungen_unternehmensintern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Auswirkungen von Smart Technologies, Social Apps etc. auf Kunden und externe Prozesse}
+\input{sections/Auswirkungen_extern}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Erkenntnisse der grossen Industrieanalysten}
+\input{sections/Erkenntnisse_Industrie}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Erkenntnisse der grossen Beratungsunternehmen}
+\input{sections/Erkenntnisse_Beratung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Erkenntnisse der grossen ICT-Unternehmen}
+\input{sections/Erkenntnisse_ICT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\subsection{Herausforderungen und Strategien für die Branche ``Banken''}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Aktuelle Herausforderungen und Trends in der gewählten Branche}
+\input{sections/Herausforderungen_Trends}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Darstellung der wesentlichen technologischen Treiber}
+\input{sections/TechnologischeTreiber}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Strategieempfehlungen der Experten}
+\input{sections/Strategieempfehlungen_Experten}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Themenführer, Meinungsmacher und Think Tanks in der gewählten Branche}
+\input{sections/Themenfuehrer}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Statistiken, Visualisierungen und Konzeptdarstellungen}
+\input{sections/Statistiken}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Best Practices und interessante Fallbeispiele}
+\input{sections/Best_Practices}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibliographystyle{unsrt}
+
+\bibliography{references}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
