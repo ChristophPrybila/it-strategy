@@ -15,7 +15,7 @@ Die Sections des Templates sind in Unterfiles aufgeteilt. <br/>
 So kommt es zu weniger Merge-Conflicts.<br/>
 Ich habe bei jeder Section dazugeschrieben wer diese bearbeitet.<br/>
 Das ganze Dokument kann mit hilfe des Hauptfiles "03_UE1_Ausarbeitung.tex" erstellt werden.<br/>
-Weiteres hab ich ein paar Beispiele f�r Zitate eingefügt.<br/>
+Weiteres hab ich ein paar Beispiele für Zitate eingefügt.<br/>
 
 Wo kann recheriert werden
 -----------
