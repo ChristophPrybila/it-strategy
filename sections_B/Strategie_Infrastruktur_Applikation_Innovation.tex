@@ -1,0 +1,47 @@
+\textbf{Infrastrukturstrategie}\\
+Um bei Verhandlungen "uber Investitionen und Wartungen von Infrastruktur gegen"uber den Anbietern eine gr"o"sere Marktmacht zu besitzen, ist das grunds"atzliche Ziel die im Unternehmen eingesetzten Komponenten zu vereinheitlichen. Das zentrale Management f"ur die generell eingesetzte Hardware wird vom \textcolor{red}{zentralen Service Center} durchgef"uhrt. Weiteres definiert das \textcolor{red}{zentralen Service Center} die Vorgaben f"ur alle lokal-spezifisch eingesetzten Komponenten an den Standorten.
+
+\begin{itemize}
+
+	\item Der Infrastruktur-Bedarf von \textbf{generelle Kernprozessen} und von \textbf{generelle Supportprozessen}, welche f"ur alle Standorte gleich sind, kann geb"undelt und einheitlich verwaltet werden. 
+
+	\item Der Infrastruktur-Bedarf von \textbf{standort-spezifischen Prozessen} kann nicht geb"undelt und vereinheitlicht werden. Die speziell ben"otigten Komponenten m"ussen extra angeschafft und verhandelt werden.
+
+\end{itemize}
+
+\begin{description}
+
+	\item[Workstations \& Betriebssysteme] F"ur die verschiedenen (generellen) Aufgabenprofile innerhalb des Unternehmens (Verwaltung, Entwicklung, Kundenbetreuung, etc.) werden einheitliche Workstations definiert welche auf die jeweiligen Anforderungen zugeschnitten sind. Definiert werden die Hardware-technischen Anforderungen und das, in Hinsicht auf die verwendeten Applikationen und Services passende, Betriebssystem.  Die Hardware \& die Betriebssysteme eines Aufgabenprofils muss von einem Anbieter bereitgestellt werden.
+	
+	\item[Interne Netzwerke] Die Administration von standortinternen Netzwerken obliegt jeweils den lokalen Administratoren, wobei jedoch diese nach den zentralen Vorgaben zu erfolgen hat. Die zu verwendenden Router und Switches sowie Netwerkkabel werden zentral vorgegeben. Das Netzwerk darf wegen der zu gro"sen Angriffsfl"ache nicht "uber WLan betrieben werden. F"ur jeden Standort m"ussen lokale Server vorhanden sein, welche lokale die User-, Daten- und Kommunikationsverwaltung "ubernehmen. 
+	
+	\item[Externe Netzwerke] Bei externen Netzwerken wird zwischen dem geographisch verteilten Unternehmensnetzwerk und dem Internet selbst unterschieden. Beide Netzwerke werden "uber die Anschl"usse von Internet-Service-Provider (ISP) betrieben. Alle Standorte sollen ihren Anschluss vom selben ISP zu verf"ugung gestellt bekommen. Es m"ussen die erwarteten Netzwerkanforderungen f"ur die einzelnen Standorte ermittelt werden und generelle Leistungsklassen definiert werden. Alle Leistungsklassen werden in geeigneten SLAs definiert und vereinbart. Das geographisch verteilte Unternehmensnetzwerk soll als Virtual-Private-Network (VPN) abgebildet und betrieben werden. 
+	
+	\item[Server] Die f"ur die Prozesse eingesetzten Server m"ussen im Unternehmen selbst betrieben werden. Die notwendige Hardware hierzu soll ebenfalls von einem einzigen Anbieter kommen. Alle eingesetzten Server werden in Leistungsprofile eingeteilt. Es soll sowohl zentrale Serverfarmen geben als auch einzelne lokale Server an den Standorten.
+
+	\item[Contactless Payment] Die ausgegebenen Bankomatkarten welche NFC f"ahig sind, sollen von einem Anbieter bereit gestellt werden.
+	
+	\item[Mobile Banking] Die notwendigen Server welche die Funktionalit"aten f"ur die mobilen Applikationen bereit stellen, sind den Cloud-Servern zugeordnet. 
+ 
+\end{description}
+
+\textbf{Applikationsstrategie}\\	
+
+\begin{description}
+	
+	\item[Applikationen f"ur Kernprozesse \& Supportprozesse] Um einheitliche Prozesse und Produkte an allen Standorten zu gew"ahrleisten werden die Applikationen, welche notwendig f"ur Kernprozesse sind, in der unternehmenseigenen Cloud betrieben. Die Workstations agieren somit nur als Thin-Clients, die lokal betriebenen Applikationen agieren nur als Schnittstelle welche den Input der Nutzer in die Cloud einspei"en. Je nach Auslastung sollen verschiedene Instanzen einer Applikation zu verf"ugung stehen welche normalerweise im \textcolor{red}{zentralen Service Center} betrieben werden. Bei starker Auslastung kann eine solche Instanz aber auch auf einen Server des jeweiligen Standortes verschoben werden. Um Wartbarkeit und Interoperabilit"at zu gew"ahrleisten sollen die Applikationen als Services einer Software-Oriented-Architecture (SOA) innerhalb eines Enterprise-Service-Bus (ESB) betrieben werden. 
+	 
+	\item[Applikationen f"ur standortspezifische Kernprozesse] Applikationen f"ur Standortspezifische Kernprozesse m"ussen lokal entwickelt und betrieben werden. Hierbei sind zentrale Architektur- und Schnittstellenvorgaben einzuhalten um die notwendige Sicherheit und Kompatibilit"at zu gew"ahrleisten. 	
+	
+	\item[Office \& Email Applikationen] Applikationen f"ur Office und Kundenkontakt sollen einheitlich vom \textcolor{red}{zentralen Service Center} definiert werden.
+	
+	\item[Mobile Applikationen] Die mobile Applikation welche auf den Endger"aten des Kunden l"auft soll f"ur alle Kunden "uber alle Plattformen hinweg einheitlich sein. "Uber sichere Kommunikationsschnittstellen sollen die Cloud-Services des Unternehmens angesprochen und integriert werden.
+	
+	\item[SmartCard - Banking Applikationen] Die eingebettete Payment Applikation welche auf den Banking-Smartcards der Kunden l"auft soll f"ur alle Kunden einheitlich sein. Es soll die einzige Applikation sein welche auf der Smartcard betrieben wird.
+	
+	\item[Embedded - Banking Applikationen] Die eingebettete Payment Applikation welche auf den Secure-Elements der Endger"ate der Kunden l"auft soll f"ur alle Kunden einheitlich sein. Neben dieser Applikation k"onnen auch noch weitere Applikationen von Drittanbietern vorhanden sein. Zus"atzlich muss eine Mobile Applikation entwickelt werden, welche in der Lage ist den Bezahlvorgang mittels des Secure-Element durchzuf"uhren.
+
+\end{description}
+
+\textbf{Innovationsstrategie}\\
+Angestrebt ist Innovationsf"uhrerschaft am "osterreichischen Markt. Da die mei"sten IT Innovationen jedoch von au"serhalb von "Osterreich und Europa kommen, ist es jedoch nicht notwendig als Innovator oder Fr"uhk"aufer aufzutreten. Sicherheit in Innovationen ist kritisch, eingesetzte Technologien sollten "uber das experimentelle Stadium hinaus sein. Es reicht daher vollkommen zur Sp"aten Mehrheit zu geh"oren, wichtig ist die Innovationsf"uhrerschaft in "Osterreich. \cite{Rogers2003} Um neue Trends und Innovationen rechtzeitig Erkennen und Bewerten zu k"onnen ist eine regelm"a"se Teilnahme an Konferenzen und Messen aus dem Finanz- und Paymentbereich geplant. Bestehende interne Infrastrukturen sollten soweit wie M"oglich durch inkrementelle Innovationen ersetzt werden. Erst wenn ein bestehendes internes System im Vergleich zu neueren Innovationen wirtschaftlich nicht mehr zu rechtfertigen ist, sollte eine architektonische oder modulare Innovation eingef"uhrt werden. F"ur Produkte sind jedoch die Trends auf dem Markt ausschlaggebend, wenn notwendig m"ussen Innovationen bei Produkten und Services von Kunden schneller durchgef"uhrt werden.\\\\
