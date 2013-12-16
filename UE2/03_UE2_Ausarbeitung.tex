@@ -1,0 +1,144 @@
+\documentclass[a4paper, 12pt]{article} % Font size (can be 10pt, 11pt or 12pt) and paper size (remove a4paper for US letter paper)
+
+\usepackage[protrusion=true,expansion=true]{microtype} % Better typography
+\usepackage{graphicx} % Required for including pictures
+\usepackage{wrapfig} % Allows in-line images
+\usepackage{german}
+\usepackage{url}
+\usepackage{color}
+
+\usepackage{mathpazo} % Use the Palatino font
+\usepackage[T1]{fontenc} % Required for accented characters
+\linespread{1.05} % Change line spacing here, Palatino benefits from a slight increase by default
+
+\makeatletter
+\renewcommand\@biblabel[1]{\textbf{#1.}} % Change the square brackets for each bibliography item from '[1]' to '1.'
+\renewcommand{\@listI}{\itemsep=0pt} % Reduce the space between items in the itemize and enumerate environments and the bibliography
+
+\renewcommand{\maketitle}{ % Customize the title - do not edit title and author name here, see the TITLE block below
+\begin{flushright} % Right align
+{\LARGE\@title} % Increase the font size of the title
+
+\vspace{50pt} % Some vertical space between the title and author name
+
+{\large\@author} % Author name
+\\ \vspace{10pt}\@date % Date
+
+\vspace{40pt} % Some vertical space between the author block and abstract
+\end{flushright}
+}
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+\title{\textbf{VU IT-Strategie "Ubung 2}\\ % Title
+WS 2013\\\vspace{5pt}
+Gruppe 03} % Subtitle
+
+ 
+
+ 
+
+ 
+\author{Hafellner Markus (1125415)\\
+ Lin Zhong Li (0828454)\\
+ Prybila Christoph (0925463)\\
+ St"utz Anton (1129424)\\
+ \vspace{10pt}
+ \textbf{Gew"ahlte Branche:} Banken
+\\{\textit{Innovationsfelder: mobile banking, cloud computing, contactless payment}}} % Institution
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title section
+
+\newpage
+
+\tableofcontents
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	ESSAY BODY
+%----------------------------------------------------------------------------------------
+
+\section{Kontextbezogene Recherchen}
+\subsection{Outsourcing und im Zeitalter von Cloud Services und Apps}
+\label{subsec:OutsourcingRes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Herausforderungen beim Outsourcing in Zusammenhang mit Cloud Services und Apps}
+\input{sections_A/Herausforderung_Outsourcing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Empfehlungen der großen Industrieanalysten, Beratungsunternehmen und ICT-Konzerne}
+\input{sections_A/Empfehlungen_ICT}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Kriterien die beim Outsourcing generell Berücksichtigung finden sollten}
+\input{sections_A/Kriterien_Outsourcing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Kriterien die bei der Auswahl von Cloud Services und Apps von Relevanz sind}
+\input{sections_A/Kriterien_Auswahl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Entscheidungs- und berechnungsmodelle im Bereich ''Make or Buy''}
+\input{sections_A/Entscheidungsmodell_MakeOrBuy}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Good bzw. Bad Practices im Bereich ''Cloud Sourcing'' und ''Outsourcing''}
+\input{sections_A/PracticesOutSourcing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection{Methoden und Prozesse zur Anbieter- bzw. Implementierungspartnerauswahl}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methoden, Prozesse und Vorgehensmodelle im Bereich Softwareauswahl}
+\input{sections_A/Methoden_Anbieterauswahl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Methoden, Prozesse und Vorgehensmodelle im Bereich Hardwareauswahl}
+\input{sections_A/Methoden_Hardware}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Relevante Kriterien bei der Auswahl von technischen Implementierungspartnern}
+\input{sections_A/Kriterien_Anbieterauswahl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Ideale Struktur einer Ausschreibung (Software, Hardware und/oder Implementierung)}
+\input{sections_A/Struktur_Ausschreibung}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Empfohlener Ablauf eines umfassenden Anbieter-Hearing bzw. Assessment}
+\input{sections_A/Empfohlener_Ablauf_Hearing}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsubsection{Best Practices und interessante Fallbeispiele im Bereich Anbieterauswahl}
+\input{sections_A/Best_Practice_Anbieterauswahl}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsection{Fallbeispiel ''Implementation & Presentation''}
+\label{subsec:Fallbeispiel}
+
+\bibliographystyle{unsrt}
+
+\bibliography{references}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
