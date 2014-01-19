@@ -1,1 +1,87 @@
-TBW Anforderungskatalog ??
+\textbf{Anforderungskatalog}\\
+
+\textbf{Einleitung}\\
+Bei diesem Projekt handelt es sich um die Umsetzung einer Gesamt-IT-Strategie f\"ur das Unternehmen ``Bazinga Bank''. Dabei sind Neuerungen in den drei Bereichen
+\begin{enumerate}
+\item mobile banking,
+\item cloud computing und
+\item contactless payment
+\end{enumerate}
+geplant. Diese gilt es laut Anforderungskatalog und Ausschreibung umzusetzen. 
+Die Ziele dieser strukturellen Änderungen sind vor allem die Anpassung an den derzeitigen Stand der Technik und die damit verbundenen Vorteile für den Endkunden (mobile banking und contactless payment), sowie die Optimierung von Prozessen (cloud computing).\\
+
+\textbf{Allgemeine Beschreibung}\\
+Als Endprodukt wird f\"ur mobile banking eine Applikation f\"ur Android, iOS und Windows Phone erwartet welche vergleichbar mit vorhandenen Anwendungen von Erste Bank oder Bank Austria sind. Bei dem contactless payment ist ebenfalls eine L\"osung angestrebt die sich an der vorhandenen Technik bei Erste Bank orientieren kann. F\"ur das angestrebte Shared Service Center gibt es ebenfalls einige Beispiele in der Branche an denen man sich orientieren kann. Hier wird vor allem ausschlaggebend sein, wie viel Erfahrung ein potentieller Anbieter auf diesem Gebiet bereits gesammelt hat.\\
+
+Mit der neuen Applikation f\"ur mobile Endger\"ate soll vor allem jungen Kunden die Handhabung aller Kontodaten erleichtern. Außerdem soll damit ein Schritt in Richtung automatisiertes Banking gemacht werden um die Mitarbeiter zu entlasten. Dabei ist es wichtig, dass diese Applikation m\"oglichst einfach zu bedienen ist, aber von Anfang an alle Funktionen bietet, die auch bei den anderen Kan\"alen angeboten werden, um die Akzeptanz der neuen Software von Anfang an zu erleichtern. Man kann davon ausgehen, dass rund 30\% der Endkunden diese Applikation auf lange Sicht gesehen einsetzen werden und deshalb ist eine l\"uckenlose Verfügbarkeit der Dienste von h\"ochster Priorit\"at.\\
+
+Das neue Shared Service Center ist so zu planen, dass eine schrittweise \"Ubernahme aller daf\"ur vorgesehenen Prozesse m\"oglich ist. Als Standort wird voraussichtlich Wien gew\"ahlt, was in die Angebotserstellung des k\"unftigen Vertragspartners einflie\ss en soll. Auch hier ist es besonders wichtig, dass von Beginn an eine hohe Verf\"ugbarkeit erreicht wird um die Umstellung f\"ur die Mitarbeiter zu erleichtern.\\
+
+Um bei der Nutzung des contactless payment keine Sicherheitsbedenken aufkommen zu lassen, wird vom Anbieter verlangt, standardisierte Sicherheitskonzepte f\"ur contactless payment bereit zu stellen.\\
+
+\textbf{Operative Anforderungen}\\
+F\"ur den Bereich mobile banking wird erwartet, dass alle Funktionen die bereits \"uber den Onlinebereich verf\"ugbar sind, in gleicher Weise mobil verf\"ugbar sind. Dabei handelt es sich vor allem um:
+\begin{itemize}
+\item Kontoauszug
+\item T\"atigen einer \"Uberweisung
+\item Einrichten von Dauerauftr\"agen
+\end{itemize}
+Die Benutzerschnittstelle soll so designt werden, dass auf die gegebenen Designvorschriften f\"ur jedes Betriebssystem eingegangen wird. Dadurch steigt die Intuitivit\"at der Handhabung der Applikation und vereinfacht somit die Benutzung f\"ur den Enduser ungemein. Bez\"uglich der Hardware ist darauf zu achten, dass m\"oglichst wenig Ressourcen ben\"otigt werden sollen, um auch den fl\"ussigen Betrieb auf schw\"acheren Ger\"aten garantieren zu k\"onnen. Im Zweifel, sind verschiedene Versionen f\"ur verschiedene Betriebssystemversionen anzubieten, wie es bei Android Applikationen bereits \"ublich ist. 
+
+Das Shared Service Center muss die Prozesse so \"Ubernehmen k\"onnen, dass aus der Sicht der Anwender (Mitarbeiter) keine \"Anderungen der Struktur und Handhabung ersichtlich ist. Als Anforderung ist ebendiese Funktionalit\"at fest zu halten.
+
+F\"ur das contactless payment wird eine L\"osung verlangt, die offen f\"ur den sp\"ateren Einsatz auf Smartphones ist und eine maximale Lesedistanz von 15cm hat. Besonders hier soll darauf geachtet werden, dass die angebotene Methode mit m\"oglichst allen handels\"ublichen Ger\"aten interagieren kann und der Endkunde bei der Benutzung nicht auf gewisse Terminals eingeschr\"ankt ist.\\
+
+\textbf{Qualit\"atsanforderungen}\\
+Die Zuverl\"assigkeit in Verbindung mit Sicherheit ist ein sehr wichtiges Thema bei allen drei geforderten Produkten. Da man im Bankensektor mit \"au\ss erst sensiblen Kundendaten zu tun hat, ist es besonders wichtig, diese gen\"ugend zu sch\"utzen, da ein einmaliger Fehler und ein damit verbundener Eingriff in die IT-Systeme irreparablen Schaden f\"ur das Unternehmen bedeutet.
+
+Gerade bei der Abwicklung von Zahlungen ist die Korrektheit eine der wichtigsten Anforderungen und demnach auch besonders f\"ur mobile banking und contactless payment.
+
+Wie schon kurz erw\"ahnt soll die mobile Applikation besonders benutzungsfreundlich sein, was durch die Adaptierung der jeweils geltenden Designguidelines unterst\"utzt werden soll.
+
+Auch auf die Dokumentation wird gro\ss er Wert gelegt. So soll es f\"ur die mobile Applikation ein Benutzerhandbuch geben, alle Entwicklungsschritte und Installationsschritte verschriftlicht werden und vor allem der Code ausreichend gut dokumentiert sein. F\"ur die Einrichtung des Shared Service Centers ist es ebenfalls n\"otig ausreichend Dokumentation \"uber den Ablauf anzufertigen, um \"ahnliche Projekte oder Erweiterungen m\"oglichst effizient abwickeln zu k\"onnen.
+
+Besonders bei der Erstellung der mobilen Applikation ist darauf zu achten das Programm m\"oglichst modular aufzubauen, um auch sp\"ater noch Modifizierbarkeit zu garantieren. Als Nebeneffekt dessen ist dar\"uber hinaus Wartbarkeit und auch Wartungsfreundlichkeit zu erwarten.\\
+
+\textbf{Technische Anforderungen}\\
+Das Shared Service Center soll auf Lizenzfreier Software aufbauen um sp\"atere Lizenzkosten zu verhindern. Dabei soll vor allem auf Apache aufgebaut werden. 
+
+Die mobile banking Applikation soll f\"ur Android in zwei Versionen verf\"ugbar sein - einerseits f\"ur Ger\"ate mit Android < 4.0 und f\"ur Ger\"ate mit Android > 4.0. Au"serdem ist darauf zu achten, dass das Installationspaket eine gr\"o"se von 10MB nicht \"ubersteigt.
+
+Die Karten f\"ur contactless payment m\"ussen im standard Scheckkartenformat sein und d\"urfen ab einer Entfernung von maximal 15cm nicht mehr funktionieren um ungewolltem Abbuchen vorzubeugen.\\
+
+\textbf{Wartungsanforderungen}\\
+F\"ur das Shared Service Center ist ein System zur Fernwartung zu implementieren um eine m\"oglichst effiziente Wartung zu erm\"oglichen. Weiters ist ein Updatesystem zu implementieren, das das automatische Einspielen von Updates vereinfacht. Die Wartung der Hardware muss vom Anbieter \"ubernommen werden. Die Installation soll au"serdem st\"uckweise erfolgen k\"onnen um den Aufbau des Shared Service Center zu erleichtern und sp\"ater auf Last\"anderungen besser reagieren zu k\"onnen.
+
+F\"ur die mobile banking Applikation liegt die Wartung der Serverhardware ebenfalls beim Anbieter und die Applikation ansich muss m\"oglichst updatefreundlich gestaltet sein, um monatlich Updates an alle Appstores verteilen zu k\"onnen.\\
+
+\textbf{Realisierungsanforderungen}\\
+Hierbei ist zu beachten, dass die unter 1.3.2 Implementierungsplanung ausgef\"uhrte Projektplanung strikt einzuhalten ist. Die bezieht sich vor allem auf die Meilensteinplanung, das eingesetzte Personal und das daraus resultierende Vorgehensmodell inklusive Arbeitsschritte. Zur Qualit\"atssicherung tragen die nach vorgefertigten Formularen angefertigte Projektdokumentation und ein parallel laufendes Auditing aller Projektschritte bei. Bei den Entwicklungsumgebungen sollen insbesondere bei der mobile banking Applikation, die jeweils angebotenen SDKs f\"ur das jeweilige OS benutzt werden.\\
+
+\textbf{Ausschreibung}\\
+
+Teil 1 - Ausschreibungsprozedere
+\begin{itemize}
+	\item Anleitung f\"ur Bieter: Das Verfahren beginnt mit der \textit{Bekanntmachung der Ausschreibung}. Daraufhin kommt es zur \textit{Korrespondenzphase}, in der Sie mit uns Kontakt aufnehmen k\"onnen um eventuell unklar gebliebene Punkte zu kl\"aren. Danach haben Sie ein Monat zeit um ein entsprechendes Angebot laut Formular zu erstellen und danach werden diese \textit{ge\"offnet}. Nach der \textit{formalen Angebotspr\"ufung} folgt die \textit{Eignungspr\"ufung der Bieter} und die pr\"ufung auf \textit{Richtigkeit und ``Ausk\"ommlichkeit'' des Angebotes}. Zu guter Letzt wird das Angebot auf \textit{Wirtschaftlichkeit gepr\"uft} und danach eine \textit{Vergabeentscheidung} getroffen.
+	\item Evaluierungs- und Qualifikationskriterien: Zur Bewertung der Angebote werden  der Preis, Erfahrung mit \"ahnlichen Projekten, voraussichtliche Dauer, bisherige Gesch\"aftsbeziehungen und das Ma"s an erf\"ullbaren Anforderungen herangezogen.
+	\item Formulare: Angebot.
+	\item Berechtigte L\"ander: Grunds\"atzlich liegen hier keine Restriktionen vor. Wir behalten uns jedoch vor, Unternehmen mit einer geringeren \"ortlichen Distanz zu unseren Standorten zu pr\"aferieren.
+\end{itemize}
+
+Teil 2 - Anforderungen
+
+\begin{itemize}
+
+	\item Siehe Anforderungskatalog
+
+\end{itemize}
+
+Teil 3 - Konditionen
+
+\begin{itemize}
+
+\item Generelle Konditionen: Es gelten die in dieser Branche \"ublichen Konditionen laut \"ONORM, wobei besonders festzuhalten ist, dass es keine Beg\"utung f\"ur das Erstellen eines Angebots gibt.
+
+\item Spezielle Bestimmungen des Vertrags: Der Vertrag f\"ur die Software Erstellung und etwaige Hardware beschr\"ankt sich auf die Dauer des Projektes. F\"ur die Wartung und Betreuung danach wird ein gesonderter Servicevertrag ausgewiesen der durch SLAs erg\"anzt wird.
+
+\end{itemize}
